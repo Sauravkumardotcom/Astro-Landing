@@ -38,11 +38,11 @@ The landing page also integrates mock APIs for the Hero section and Client Testi
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/landing-page.git
+   git clone https://github.com/Sauravkumardotcom/Astro-Landing
 
 2. Navigate into the project:
    ```bash
-   cd landing-page
+   cd my-project
 
 3. Install dependencies:   
    ```bash
