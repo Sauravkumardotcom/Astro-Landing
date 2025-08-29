@@ -1,36 +1,84 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Landing Page Assignment
 
-## Getting Started
+This is my developer assignment where I converted a Figma design into a responsive landing page using Next.js, Tailwind CSS, and JavaScript.  
+The landing page also integrates mock APIs for the Hero section and Client Testimonials.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Tech Stack
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Next.js (App Router)
+- Tailwind CSS
+- Swiper.js for testimonials carousel
+- Lucide React for icons
+- Mock APIs (using Next.js API routes)
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Features
 
-## Learn More
+1. **Hero Section**  
+   - Content is fetched dynamically from a mock API (`/api/hero`).  
+   - Handles loading and error states.  
 
-To learn more about Next.js, take a look at the following resources:
+2. **Client Testimonials**  
+   - Data is fetched from `/api/testimonials`.  
+   - Implemented as a responsive carousel using Swiper.js.  
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. **Stats, Services, and Offer Sections**  
+   - Built as modular and reusable components.  
+   - Fully responsive layout.  
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+4. **Dark Mode Support**  
+   - Uses Tailwind’s dark mode configuration.  
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Project Setup
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/landing-page.git
+
+2. Navigate into the project:
+   ```bash
+   cd landing-page
+
+3. Install dependencies:   
+   ```bash
+   npm install
+
+4. Run the development server:
+   ```bash
+   npm run dev
+5. Open your browser and go to:
+
+   http://localhost:3000
+   
+
+
+
+
+**Project Structure**
+src/
+├─ app/
+│ └─ page.js
+│ └─ layout.js
+│ └─ global.css
+│ └─ provider.jsx
+├─ components/
+│ └─ landing/
+│ | ├─ Hero.jsx
+│ | ├─ Testimonials.jsx
+│ | ├─ Stats.jsx
+│ | ├─ Services.jsx
+│ | └─ Offer.jsx
+│ └─ ui/
+│ | └─ button.jsx
+│ └─ ThemeToggle.jsx
+└─ pages/
+│ └─ api/
+│ ├─ hero.js
+│ └─ testimonials.js
+└─ lib/
+└─ utils.js
