@@ -60,6 +60,7 @@ The landing page also integrates mock APIs for the Hero section and Client Testi
 
 
 **Project Structure**
+  ```bash
 src/
 ├─ app/
 │ └─ page.js
